@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #333;
+  padding: 10px;
   color: white;
+  z-index: 3;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.navbar button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
+
+.navbar button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Add more styling rules as needed */
+/* .imagecontainer{
+  width: 100vw;
+   
+    margin-top: 10px;
+    position: relative;
+    
+}
+
+.image-viewer{
+  width: 100vw;
+  
+}
+
+.rectangles {
+  
+  width: 100vw;
+  height: 100px;
+  
+  position: absolute;
+  bottom: 1px;
+  background-color: aqua;
+ 
+} */
+
+.imagecontainer {
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+.image-viewer {
+  width: 100vw;
+  height: 80vh;
+}
+.rectangles {
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  bottom: 400px;
+  background-color: aqua;
+  z-index: 2;
+  margin-top: 10px;
+  
+}
+
+
+
+
+
+
